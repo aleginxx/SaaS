@@ -11,9 +11,9 @@ GitHub repository for solveMyProblem, a SaaS application for solving computation
 
 ## Team Members
 
-- Georgia Alexopoulou | el20164
-- David Prasinos      | el20899
-- Christos Kavallaris | el20044
+- Georgia Alexopoulou
+- David Prasinos
+- Christos Kavallaris
 
 ### Installation
 
