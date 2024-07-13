@@ -1,0 +1,11 @@
+_id,problem_id,solution_desc,solution_timestamp,time_elapsed,__v
+6686e0003e5e901d6c6216eb,66799a2ada3f76f283191416,Total cost = 265\r\nWorker 0 assigned to task 3. Cost = 70\r\nWorker 1 assigned to task 2. Cost = 55\r\nWorker 2 assigned to task 1. Cost = 95\r\nWorker 3 assigned to task 0. Cost = 45,2024-07-04T17:46:40.529Z,4526,0
+6686e00c3e5e901d6c6216ed,66799a2ada3f76f283191417,Total cost = 225\r\nWorker 0 assigned to task 1. Cost = 80\r\nWorker 1 assigned to task 0. Cost = 60\r\nWorker 2 assigned to task 2. Cost = 85,2024-07-04T17:46:52.965Z,925,0
+6686e0163e5e901d6c6216ef,66799a2ada3f76f283191418,Total cost = 185\r\nWorker 0 assigned to task 0. Cost = 50\r\nWorker 1 assigned to task 1. Cost = 60\r\nWorker 2 assigned to task 2. Cost = 75,2024-07-04T17:47:02.234Z,892,0
+6686e01f3e5e901d6c6216f1,66799a2ada3f76f283191419,Total cost = 265\r\nWorker 0 assigned to task 1. Cost = 100\r\nWorker 1 assigned to task 0. Cost = 90\r\nWorker 2 assigned to task 2. Cost = 75,2024-07-04T17:47:11.018Z,1012,0
+6686e0263e5e901d6c6216f3,66799a2ada3f76f28319141a,Total cost = 250\r\nWorker 0 assigned to task 0. Cost = 60\r\nWorker 1 assigned to task 1. Cost = 100\r\nWorker 2 assigned to task 2. Cost = 90,2024-07-04T17:47:18.837Z,966,0
+6686e0303e5e901d6c6216f5,66799a2ada3f76f28319141b,Total cost = 270\r\nWorker 0 assigned to task 1. Cost = 90\r\nWorker 1 assigned to task 0. Cost = 75\r\nWorker 2 assigned to task 2. Cost = 105,2024-07-04T17:47:28.482Z,882,0
+6686e0393e5e901d6c6216f7,66799a2ada3f76f28319141c,Total cost = 150\r\nWorker 0 assigned to task 0. Cost = 70\r\nWorker 1 assigned to task 1. Cost = 80,2024-07-04T17:47:37.569Z,1052,0
+6686e0413e5e901d6c6216f9,66799a2ada3f76f28319141d,Total cost = 150\r\nWorker 0 assigned to task 0. Cost = 80\r\nWorker 2 assigned to task 1. Cost = 70,2024-07-04T17:47:45.917Z,857,0
+6686e04a3e5e901d6c6216fb,66799a2ada3f76f28319141e,Total cost = 160\r\nWorker 1 assigned to task 1. Cost = 90\r\nWorker 2 assigned to task 0. Cost = 70,2024-07-04T17:47:54.365Z,915,0
+6686e0523e5e901d6c6216fd,66799a2ada3f76f28319141f,Total cost = 150\r\nWorker 0 assigned to task 1. Cost = 70\r\nWorker 1 assigned to task 0. Cost = 80,2024-07-04T17:48:02.127Z,896,0

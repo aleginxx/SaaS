@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveMyProblem - SaaS for Complex Computational Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to SolveMyProblem!</h1>
+        <p>Your one-stop solution for complex computational tasks.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li id="funds" style="display: none;"><a href="funds.html">Buy Tokens</a></li>
+            <li id="solve" style="display: none;"><a href="solve.html">Solve a Problem</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="register"><a href="register.html">Register</a></li>
+            <li id="account" style="display: none;"><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="buy-tokens">
+        <h2>Purchase Tokens</h2>
+        <form id="token-form" action="purchase-tokens" method="POST">
+            <label for="token-amount">Number of Tokens:</label>
+            <input type="number" id="token-amount" name="token_amount" min="5" step="5" value="5" required oninput="updateTotal()">
+            <small>5 tokens per question</small>
+
+            <p id="balance">Account Balance:</p>
+            <p id="credits">User Credits:</p>
+
+            <p><br>Total Cost: <strong><span id="total-cost">0.00</span>€</strong></p><br>
+
+            <button type="submit">Purchase Tokens</button>
+        </form>
+    </section>
+
+    <section id="Deposit">
+        <h2>Deposit via Credit Card</h2>
+        <form id="deposit-form" action="deposit" method="POST">
+            <label for="deposit-amount"><b>Deposit Amount ($)</b></label>
+            <input type="number" id="deposit-amount" name="deposit_amount" required>
+            <small>10$ minimum deposit</small>
+
+            <label for="card-info">Select Credit Card:</label>
+            <select name="chooseCard" id="chooseCard">
+            </select><br><br>
+
+            <button type="submit">Deposit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 SolveMyProblem, Inc.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.5.23/jsrsasign-all-min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const token = Cookies.get('token');
+            if (!token) {
+                alert('User not authenticated.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            const decodedToken = KJUR.jws.JWS.parse(token);
+            const userId = decodedToken.payloadObj.userId;
+
+            fetch(`http://localhost:3000/solveMyProblem/users/${userId}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch user data with status: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(user => {
+                    const balanceDisplay = user.balance !== null ? user.balance : '0';
+                    document.getElementById('balance').textContent = "Account Balance: $" + balanceDisplay;
+
+                    const creditsDisplay = user.credits !== null ? user.credits : '0';
+                    document.getElementById('credits').textContent = "User Credits: " + creditsDisplay;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error loading user information. Please check console for details.');
+                });
+
+            document.getElementById('deposit-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const depositAmount = parseFloat(document.getElementById('deposit-amount').value);
+
+                if (depositAmount < 10) {
+                    alert('Minimum deposit amount is $10.');
+                    return;
+                }
+
+                fetch(`http://localhost:3000/solveMyProblem/users/${userId}/add-balance`, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ amount: depositAmount })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to update balance with status: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Deposit Success:', data);
+                    alert('Deposit successful! Your new balance is $' + data.balance);
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error depositing funds. Please check console for details.');
+                });
+            });
+
+            document.getElementById('token-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                
+                const tokenAmount = parseInt(document.getElementById('token-amount').value, 10);
+                const totalCost = tokenAmount * 0.1; // Assuming 0.1 euros per token
+
+                fetch('http://localhost:3004/solveMyProblem/transactions/add', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer ' + token, 
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        user_id: userId, 
+                        amount: totalCost, 
+                        credits_bought: tokenAmount 
+                    }) 
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to complete the transaction with status: ' + response.status);
+                    }
+                    return response.json(); 
+                })
+                .then(data => {
+                    console.log('Transaction Success:', data); 
+                    alert('Tokens purchased successfully!');
+                    window.location.href = 'funds.html';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error purchasing tokens. Please check console for details.');
+                });
+            });
+        });
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        function updateTotal() {
+            var tokenAmount = document.getElementById('token-amount').value;
+            var totalCost = tokenAmount * 0.1; // 0.1 euros per token
+            document.getElementById('total-cost').textContent = totalCost.toFixed(2);
+        }
+        window.onload = updateTotal;
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
+

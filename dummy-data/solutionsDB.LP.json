@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "6686e0a33e5e901d6c6216ff"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142a"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 3\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 34.0\r\nx = 6.0\r\ny = 4.0\r\n\r\nAdvanced usage:\r\nProblem solved in 2 milliseconds\r\nProblem solved in 2 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:49:23.606Z"
+  },
+  "time_elapsed": 185,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0aa3e5e901d6c621701"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142b"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 5.0\r\nx = 1.0\r\ny = 2.0\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 0 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:49:30.818Z"
+  },
+  "time_elapsed": 113,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0b43e5e901d6c621703"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142c"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 20.8\r\nx = 5.6\r\ny = 3.2\r\n\r\nAdvanced usage:\r\nProblem solved in 3 milliseconds\r\nProblem solved in 2 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:49:40.988Z"
+  },
+  "time_elapsed": 125,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0bc3e5e901d6c621705"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142d"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 10.0\r\nx = 2.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 0 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:49:48.232Z"
+  },
+  "time_elapsed": 113,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0c33e5e901d6c621707"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142e"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 17.2\r\nx = 1.5\r\ny = 5.2\r\n\r\nAdvanced usage:\r\nProblem solved in 2 milliseconds\r\nProblem solved in 1 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:49:55.754Z"
+  },
+  "time_elapsed": 107,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0ca3e5e901d6c621709"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f28319142f"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 3.0\r\nx = 1.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 0 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:50:02.896Z"
+  },
+  "time_elapsed": 115,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0d13e5e901d6c62170b"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191430"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 14.0\r\nx = 1.0\r\ny = 4.0\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 1 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:50:09.470Z"
+  },
+  "time_elapsed": 112,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0d83e5e901d6c62170d"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191431"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 3.5\r\nx = 1.5\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 0 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:50:16.388Z"
+  },
+  "time_elapsed": 112,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0e03e5e901d6c62170f"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191432"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 21.5\r\nx = 4.4\r\ny = 2.1\r\n\r\nAdvanced usage:\r\nProblem solved in 1 milliseconds\r\nProblem solved in 2 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:50:24.027Z"
+  },
+  "time_elapsed": 121,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e0e83e5e901d6c621711"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191433"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with Glop solver v9.10.4067\r\nSolution:\r\nObjective value = 22.3\r\nx = 4.3\r\ny = 1.7\r\n\r\nAdvanced usage:\r\nProblem solved in 2 milliseconds\r\nProblem solved in 2 iterations",
+  "solution_timestamp": {
+    "$date": "2024-07-04T17:50:32.370Z"
+  },
+  "time_elapsed": 112,
+  "__v": 0
+}]

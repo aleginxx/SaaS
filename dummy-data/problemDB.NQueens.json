@@ -1,0 +1,160 @@
+[{
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143e"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 8
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319113c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143f"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 10
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191101"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191440"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 12
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191119"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191441"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 8
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191442"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 10
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319113e"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191443"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 12
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191116"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191444"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 8
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319113d"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191445"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 10
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319111f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191446"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 12
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191149"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191447"
+    },
+    "credits_used": 8,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "board_size": 8
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319113a"
+    }
+  }]

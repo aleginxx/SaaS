@@ -1,0 +1,3480 @@
+[{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913f8"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 4,
+    "NumShifts": 3,
+    "NumDays": 3
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "user_id": {
+    "$oid": "66797085da3f76f283191156"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913f9"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 5,
+    "NumShifts": 2,
+    "NumDays": 4
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "user_id": {
+    "$oid": "66797085da3f76f28319111f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913fa"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 3,
+    "NumShifts": 3,
+    "NumDays": 3
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "user_id": {
+    "$oid": "66797085da3f76f28319111f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913fb"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 4,
+    "NumShifts": 2,
+    "NumDays": 5
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "user_id": {
+    "$oid": "66797085da3f76f283191125"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913fc"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 6,
+    "NumShifts": 3,
+    "NumDays": 2
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "user_id": {
+    "$oid": "66797085da3f76f283191127"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913fd"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 3,
+    "NumShifts": 4,
+    "NumDays": 3
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "user_id": {
+    "$oid": "66797085da3f76f283191114"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913fe"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 5,
+    "NumShifts": 3,
+    "NumDays": 4
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "user_id": {
+    "$oid": "66797085da3f76f28319113f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f2831913ff"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 4,
+    "NumShifts": 3,
+    "NumDays": 3
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "user_id": {
+    "$oid": "66797085da3f76f283191115"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191400"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 6,
+    "NumShifts": 2,
+    "NumDays": 4
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "user_id": {
+    "$oid": "66797085da3f76f28319113e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191401"
+  },
+  "credits_used": 1,
+  "problem_desc": {
+    "NumEmployees": 3,
+    "NumShifts": 3,
+    "NumDays": 5
+  },
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "user_id": {
+    "$oid": "66797085da3f76f283191119"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191402"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 40.73061,
+        "Longitude": -73.935242
+      },
+      {
+        "Latitude": 37.9998332818384,
+        "Longitude": 23.7431771479843
+      },
+      {
+        "Latitude": 37.966783510526,
+        "Longitude": 23.7786055336422
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 0,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191130"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191403"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 34.052235,
+        "Longitude": -118.243683
+      },
+      {
+        "Latitude": 37.9990464764814,
+        "Longitude": 23.7732513981902
+      },
+      {
+        "Latitude": 37.9740702363407,
+        "Longitude": 23.7375198905651
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 2,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910fc"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191404"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 51.507351,
+        "Longitude": -0.127758
+      },
+      {
+        "Latitude": 37.9976370555679,
+        "Longitude": 23.766326699717
+      },
+      {
+        "Latitude": 37.9871581852694,
+        "Longitude": 23.7600403988099
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 1,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191116"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191405"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 48.856613,
+        "Longitude": 2.352222
+      },
+      {
+        "Latitude": 37.9656595261289,
+        "Longitude": 23.7804481656328
+      },
+      {
+        "Latitude": 38.0081619401188,
+        "Longitude": 23.7437267361884
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 0,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191406"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 55.755825,
+        "Longitude": 37.617298
+      },
+      {
+        "Latitude": 37.9834746564623,
+        "Longitude": 23.7325686491771
+      },
+      {
+        "Latitude": 37.9636241334636,
+        "Longitude": 23.7778582015461
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 1,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191407"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 35.689487,
+        "Longitude": 139.691711
+      },
+      {
+        "Latitude": 37.9658106007088,
+        "Longitude": 23.7213368725731
+      },
+      {
+        "Latitude": 37.9762429354646,
+        "Longitude": 23.7402382017401
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 2,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191102"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191408"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": -33.86882,
+        "Longitude": 151.209296
+      },
+      {
+        "Latitude": 38.0056680973323,
+        "Longitude": 23.7280890826921
+      },
+      {
+        "Latitude": 38.0013238772217,
+        "Longitude": 23.7583040097244
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 1,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910fb"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191409"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": -22.9068,
+        "Longitude": -43.1729
+      },
+      {
+        "Latitude": 37.9632024791509,
+        "Longitude": 23.7851749644623
+      },
+      {
+        "Latitude": 37.9653577058191,
+        "Longitude": 23.743200049927
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 0,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140a"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": -33.44889,
+        "Longitude": -70.669265
+      },
+      {
+        "Latitude": 37.9692186084866,
+        "Longitude": 23.7851108524873
+      },
+      {
+        "Latitude": 37.9827169763799,
+        "Longitude": 23.7354215305124
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 2,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910fb"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140b"
+  },
+  "credits_used": 2,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Locations": [
+      {
+        "Latitude": 39.9042,
+        "Longitude": 116.4074
+      },
+      {
+        "Latitude": 37.9723001307611,
+        "Longitude": 23.7884239333305
+      },
+      {
+        "Latitude": 37.9782788027907,
+        "Longitude": 23.7588455894457
+      }
+    ],
+    "NumVehicles": 2,
+    "DepotIndex": 1,
+    "MaxDistance": 10000
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191127"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140c"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Values": [
+      360,
+      83,
+      59,
+      130,
+      431,
+      67,
+      230,
+      52,
+      93,
+      125,
+      670,
+      892,
+      600,
+      38,
+      48,
+      147,
+      78,
+      256,
+      63,
+      17,
+      120,
+      164,
+      432,
+      35,
+      92,
+      110,
+      22,
+      42,
+      50,
+      323,
+      514,
+      28,
+      87,
+      73,
+      78,
+      15,
+      26,
+      78,
+      210,
+      36,
+      85,
+      189,
+      274,
+      43,
+      33,
+      10,
+      19,
+      389,
+      276,
+      312
+    ],
+    "Weights": [
+      [
+        7,
+        0,
+        30,
+        22,
+        80,
+        94,
+        11,
+        81,
+        70,
+        64,
+        59,
+        18,
+        0,
+        36,
+        3,
+        8,
+        15,
+        42,
+        9,
+        0,
+        42,
+        47,
+        52,
+        32,
+        26,
+        48,
+        55,
+        6,
+        29,
+        84,
+        2,
+        4,
+        18,
+        56,
+        7,
+        29,
+        93,
+        44,
+        71,
+        3,
+        86,
+        66,
+        31,
+        65,
+        0,
+        79,
+        20,
+        65,
+        52,
+        13
+      ]
+    ],
+    "Capacities": [
+      850
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319112c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140d"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Values": [
+      130,
+      450,
+      250,
+      90,
+      170,
+      450,
+      150,
+      70,
+      60,
+      600,
+      230,
+      420,
+      320,
+      50,
+      380,
+      240,
+      350,
+      440,
+      130,
+      110,
+      210,
+      70,
+      360,
+      180,
+      280,
+      420,
+      380,
+      200,
+      290,
+      50,
+      400,
+      350,
+      160,
+      290,
+      450,
+      360,
+      280,
+      370,
+      450,
+      290,
+      330,
+      130,
+      390,
+      270,
+      140,
+      300,
+      220,
+      200,
+      320
+    ],
+    "Weights": [
+      [
+        20,
+        10,
+        20,
+        30,
+        10,
+        20,
+        10,
+        30,
+        40,
+        10,
+        30,
+        20,
+        30,
+        40,
+        30,
+        20,
+        30,
+        20,
+        20,
+        40,
+        40,
+        10,
+        40,
+        20,
+        30,
+        20,
+        20,
+        10,
+        30,
+        30,
+        20,
+        30,
+        10,
+        10,
+        20,
+        30,
+        40,
+        20,
+        10,
+        40,
+        30,
+        10,
+        30,
+        20,
+        30,
+        40,
+        10,
+        20
+      ]
+    ],
+    "Capacities": [
+      800
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191113"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140e"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Values": [
+      210,
+      320,
+      430,
+      120,
+      370,
+      90,
+      180,
+      250,
+      60,
+      310,
+      290,
+      440,
+      380,
+      160,
+      350,
+      140,
+      470,
+      180,
+      410,
+      350,
+      420,
+      270,
+      200,
+      330,
+      280,
+      490,
+      390,
+      370,
+      330,
+      470,
+      410,
+      240,
+      380,
+      140,
+      230,
+      430,
+      320,
+      260,
+      110,
+      200,
+      190,
+      370,
+      420,
+      310,
+      400,
+      130,
+      150,
+      470,
+      300
+    ],
+    "Weights": [
+      [
+        40,
+        30,
+        20,
+        30,
+        10,
+        20,
+        20,
+        10,
+        10,
+        30,
+        20,
+        30,
+        20,
+        10,
+        20,
+        10,
+        40,
+        40,
+        20,
+        10,
+        30,
+        30,
+        20,
+        10,
+        10,
+        30,
+        10,
+        40,
+        20,
+        40,
+        10,
+        20,
+        40,
+        10,
+        20,
+        20,
+        30,
+        40,
+        30,
+        40,
+        30,
+        30,
+        30,
+        10,
+        40,
+        20,
+        20,
+        10
+      ]
+    ],
+    "Capacities": [
+      1000
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319140f"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Values": [
+      250,
+      120,
+      160,
+      390,
+      430,
+      340,
+      380,
+      470,
+      420,
+      490,
+      370,
+      310,
+      280,
+      260,
+      480,
+      180,
+      470,
+      230,
+      450,
+      110,
+      290,
+      390,
+      310,
+      440,
+      330,
+      410,
+      470,
+      450,
+      370,
+      420,
+      220,
+      180,
+      150,
+      340,
+      120,
+      160,
+      480,
+      290,
+      130,
+      370,
+      240,
+      200,
+      300,
+      260,
+      320,
+      230,
+      350,
+      410,
+      220
+    ],
+    "Weights": [
+      [
+        20,
+        30,
+        30,
+        40,
+        10,
+        30,
+        20,
+        20,
+        40,
+        40,
+        40,
+        10,
+        20,
+        20,
+        40,
+        20,
+        40,
+        10,
+        10,
+        30,
+        20,
+        20,
+        10,
+        10,
+        40,
+        20,
+        20,
+        10,
+        30,
+        10,
+        20,
+        40,
+        10,
+        30,
+        30,
+        40,
+        10,
+        10,
+        40,
+        10,
+        40,
+        10,
+        40,
+        30,
+        10,
+        30,
+        30
+      ]
+    ],
+    "Capacities": [
+      1200
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191142"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191410"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Values": [
+      230,
+      180,
+      430,
+      370,
+      260,
+      340,
+      120,
+      130,
+      250,
+      470,
+      410,
+      380,
+      280,
+      420,
+      390,
+      350,
+      440,
+      120,
+      470,
+      160,
+      340,
+      290,
+      300,
+      200,
+      480,
+      210,
+      170,
+      400,
+      450,
+      390,
+      490,
+      440,
+      320,
+      150,
+      380,
+      170,
+      350,
+      230,
+      360,
+      470,
+      300,
+      120,
+      250,
+      490,
+      490,
+      340,
+      140,
+      460,
+      420
+    ],
+    "Weights": [
+      [
+        30,
+        20,
+        10,
+        20,
+        10,
+        20,
+        20,
+        20,
+        10,
+        10,
+        40,
+        40,
+        30,
+        30,
+        20,
+        10,
+        20,
+        30,
+        10,
+        10,
+        20,
+        30,
+        10,
+        30,
+        30,
+        30,
+        40,
+        10,
+        40,
+        10,
+        40,
+        10,
+        10,
+        20,
+        40,
+        40,
+        10,
+        40,
+        30,
+        30,
+        40,
+        30,
+        40,
+        30,
+        40,
+        40,
+        20,
+        30
+      ]
+    ],
+    "Capacities": [
+      1500
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191145"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191411"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Values": [
+      270,
+      290,
+      120,
+      450,
+      400,
+      430,
+      340,
+      230,
+      370,
+      180,
+      490,
+      350,
+      210,
+      470,
+      160,
+      380,
+      440,
+      390,
+      220,
+      300,
+      280,
+      420,
+      170,
+      450,
+      330,
+      320,
+      200,
+      460,
+      120,
+      260,
+      490,
+      350,
+      490,
+      380,
+      430,
+      130,
+      470,
+      420,
+      190,
+      360,
+      170,
+      450,
+      470,
+      470,
+      240,
+      150,
+      490,
+      430,
+      490
+    ],
+    "Weights": [
+      [
+        40,
+        10,
+        40,
+        30,
+        30,
+        10,
+        10,
+        40,
+        40,
+        30,
+        40,
+        20,
+        10,
+        10,
+        30,
+        30,
+        40,
+        20,
+        30,
+        20,
+        10,
+        10,
+        10,
+        40,
+        40,
+        10,
+        20,
+        10,
+        20,
+        20,
+        40,
+        20,
+        30,
+        10,
+        30,
+        10,
+        10,
+        40,
+        10,
+        40,
+        10,
+        10,
+        30,
+        30,
+        20,
+        10,
+        20,
+        40
+      ]
+    ],
+    "Capacities": [
+      900
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191154"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191412"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Values": [
+      200,
+      280,
+      160,
+      470,
+      390,
+      230,
+      380,
+      440,
+      220,
+      120,
+      260,
+      350,
+      330,
+      460,
+      120,
+      450,
+      320,
+      290,
+      210,
+      340,
+      430,
+      190,
+      390,
+      170,
+      490,
+      470,
+      240,
+      150,
+      420,
+      360,
+      170,
+      430,
+      490,
+      470,
+      490,
+      430,
+      240,
+      270,
+      290,
+      120,
+      450,
+      400,
+      430,
+      340,
+      230,
+      370,
+      180,
+      490
+    ],
+    "Weights": [
+      [
+        20,
+        10,
+        40,
+        20,
+        10,
+        10,
+        40,
+        30,
+        30,
+        30,
+        40,
+        40,
+        30,
+        10,
+        20,
+        20,
+        20,
+        10,
+        30,
+        20,
+        20,
+        30,
+        20,
+        10,
+        20,
+        10,
+        30,
+        40,
+        10,
+        30,
+        30,
+        40,
+        30,
+        30,
+        40,
+        10,
+        40,
+        30,
+        20,
+        10,
+        20,
+        10,
+        10,
+        10,
+        40,
+        30,
+        10,
+        20
+      ]
+    ],
+    "Capacities": [
+      1100
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191105"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191413"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Values": [
+      430,
+      360,
+      390,
+      470,
+      470,
+      340,
+      440,
+      160,
+      420,
+      310,
+      240,
+      120,
+      150,
+      490,
+      470,
+      430,
+      440,
+      490,
+      120,
+      370,
+      380,
+      260,
+      310,
+      220,
+      300,
+      430,
+      170,
+      450,
+      400,
+      430,
+      340,
+      230,
+      370,
+      180,
+      490,
+      350,
+      210,
+      470,
+      160,
+      380,
+      440,
+      390,
+      220,
+      300,
+      280,
+      420,
+      170,
+      450
+    ],
+    "Weights": [
+      [
+        10,
+        20,
+        30,
+        10,
+        20,
+        30,
+        10,
+        30,
+        20,
+        20,
+        40,
+        30,
+        30,
+        10,
+        20,
+        30,
+        10,
+        30,
+        10,
+        40,
+        10,
+        20,
+        20,
+        30,
+        20,
+        10,
+        40,
+        40,
+        30,
+        20,
+        20,
+        40,
+        40,
+        40,
+        10,
+        40,
+        10,
+        20,
+        10,
+        40,
+        10,
+        10,
+        30,
+        30,
+        40,
+        20,
+        30
+      ]
+    ],
+    "Capacities": [
+      1300
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191142"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191414"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Values": [
+      420,
+      160,
+      470,
+      430,
+      440,
+      120,
+      370,
+      380,
+      260,
+      310,
+      220,
+      300,
+      430,
+      170,
+      450,
+      400,
+      430,
+      340,
+      230,
+      370,
+      180,
+      490,
+      350,
+      210,
+      470,
+      160,
+      380,
+      440,
+      390,
+      220,
+      300,
+      280,
+      420,
+      170,
+      450,
+      470,
+      490,
+      390,
+      370,
+      390,
+      470,
+      310,
+      350,
+      340,
+      320,
+      300,
+      450,
+      490
+    ],
+    "Weights": [
+      [
+        40,
+        10,
+        30,
+        10,
+        30,
+        30,
+        20,
+        40,
+        10,
+        40,
+        20,
+        30,
+        40,
+        10,
+        20,
+        40,
+        10,
+        40,
+        10,
+        10,
+        30,
+        20,
+        10,
+        10,
+        20,
+        30,
+        20,
+        10,
+        30,
+        40,
+        10,
+        40,
+        10,
+        40,
+        30,
+        30,
+        20,
+        40,
+        20,
+        40,
+        30,
+        30,
+        30,
+        10,
+        40,
+        40,
+        10,
+        30
+      ]
+    ],
+    "Capacities": [
+      1000
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191151"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191415"
+  },
+  "credits_used": 3,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Values": [
+      240,
+      200,
+      430,
+      340,
+      430,
+      220,
+      300,
+      280,
+      420,
+      170,
+      450,
+      470,
+      240,
+      150,
+      490,
+      430,
+      360,
+      390,
+      470,
+      470,
+      340,
+      440,
+      160,
+      420,
+      310,
+      240,
+      120,
+      350,
+      440,
+      290,
+      400,
+      390,
+      220,
+      320,
+      200,
+      480,
+      210,
+      170,
+      400,
+      450,
+      390,
+      490,
+      440,
+      320,
+      150,
+      380,
+      170,
+      350
+    ],
+    "Weights": [
+      [
+        30,
+        20,
+        20,
+        10,
+        30,
+        10,
+        30,
+        20,
+        10,
+        10,
+        40,
+        10,
+        30,
+        10,
+        30,
+        30,
+        40,
+        40,
+        20,
+        10,
+        20,
+        10,
+        40,
+        40,
+        20,
+        30,
+        10,
+        40,
+        20,
+        40,
+        40,
+        10,
+        40,
+        10,
+        20,
+        40,
+        20,
+        40,
+        10,
+        10,
+        30,
+        30,
+        10,
+        10,
+        30,
+        30,
+        30
+      ]
+    ],
+    "Capacities": [
+      800
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319111e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191416"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Costs": [
+      [
+        90,
+        76,
+        75,
+        70
+      ],
+      [
+        35,
+        85,
+        55,
+        65
+      ],
+      [
+        125,
+        95,
+        90,
+        105
+      ],
+      [
+        45,
+        110,
+        95,
+        115
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191136"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191417"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Costs": [
+      [
+        100,
+        80,
+        70
+      ],
+      [
+        60,
+        90,
+        120
+      ],
+      [
+        80,
+        110,
+        85
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319112f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191418"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Costs": [
+      [
+        50,
+        70,
+        90
+      ],
+      [
+        80,
+        60,
+        100
+      ],
+      [
+        110,
+        85,
+        75
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191134"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191419"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Costs": [
+      [
+        120,
+        100,
+        110
+      ],
+      [
+        90,
+        85,
+        95
+      ],
+      [
+        70,
+        80,
+        75
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191110"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141a"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Costs": [
+      [
+        60,
+        85,
+        95
+      ],
+      [
+        110,
+        100,
+        120
+      ],
+      [
+        80,
+        70,
+        90
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141b"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Costs": [
+      [
+        130,
+        90,
+        100
+      ],
+      [
+        75,
+        110,
+        85
+      ],
+      [
+        95,
+        120,
+        105
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141c"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Costs": [
+      [
+        70,
+        100
+      ],
+      [
+        90,
+        80
+      ],
+      [
+        110,
+        120
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191150"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141d"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Costs": [
+      [
+        80,
+        110
+      ],
+      [
+        120,
+        100
+      ],
+      [
+        90,
+        70
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191112"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141e"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Costs": [
+      [
+        100,
+        120
+      ],
+      [
+        110,
+        90
+      ],
+      [
+        70,
+        80
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319141f"
+  },
+  "credits_used": 4,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Costs": [
+      [
+        90,
+        70
+      ],
+      [
+        80,
+        100
+      ],
+      [
+        120,
+        110
+      ]
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191141"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191420"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 7 * y <= 17.5",
+      "x <= 3.5"
+    ],
+    "Objective": "Maximize x + 10 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191132"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191421"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 8 * y <= 20",
+      "2 * x + 5 * y <= 15",
+      "x >= 1.5"
+    ],
+    "Objective": "Maximize 2 * x + 5 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191422"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + 3 * y <= 12",
+      "x + y <= 5",
+      "x >= 1",
+      "y >= 0.5"
+    ],
+    "Objective": "Minimize x + 2 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191103"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191423"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "3 * x + 4 * y <= 18",
+      "x + 2 * y <= 8",
+      "2 * x + y >= 5",
+      "x >= 2",
+      "y <= 3"
+    ],
+    "Objective": "Maximize 3 * x + 2 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191124"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191424"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 2 * y <= 10",
+      "2 * x - y <= 8",
+      "x >= 1",
+      "y >= 2"
+    ],
+    "Objective": "Minimize 2 * x + y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910fb"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191425"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + y <= 6",
+      "x - 2 * y <= 1",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 4 * x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191115"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191426"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + 3 * y <= 15",
+      "3 * x - 2 * y <= 9",
+      "x >= 2",
+      "y >= 1"
+    ],
+    "Objective": "Minimize 3 * x + 4 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910fc"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191427"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "3 * x + 2 * y <= 12",
+      "x + y <= 5",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 2 * x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319111c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191428"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + y <= 8",
+      "x - y <= 2",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Minimize x + 2 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191429"
+  },
+  "credits_used": 5,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + y <= 10",
+      "x + 2 * y <= 8",
+      "x >= 1.5",
+      "y >= 1"
+    ],
+    "Objective": "Maximize x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191152"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142a"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 2 * y <= 14",
+      "3 * x - y >= 0",
+      "x - y <= 2"
+    ],
+    "Objective": "Maximize 3 * x + 4 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191127"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142b"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + y <= 10",
+      "x + 3 * y <= 15",
+      "x >= 1",
+      "y >= 2"
+    ],
+    "Objective": "Minimize x + 2 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319112b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142c"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 2 * y <= 12",
+      "2 * x - y <= 8",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 2 * x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142d"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + 3 * y <= 18",
+      "3 * x - y <= 12",
+      "x >= 2",
+      "y >= 1"
+    ],
+    "Objective": "Minimize 3 * x + 4 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191102"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142e"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + y <= 15",
+      "x + 2 * y <= 12",
+      "x >= 1.5",
+      "y >= 1"
+    ],
+    "Objective": "Maximize x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319111a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319142f"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + y <= 8",
+      "x - y <= 2",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Minimize 2 * x + y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191430"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "3 * x + 2 * y <= 14",
+      "x + y <= 5",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 2 * x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f2831910ff"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191431"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + y <= 10",
+      "x + 3 * y <= 18",
+      "x >= 1.5",
+      "y >= 1"
+    ],
+    "Objective": "Minimize x + 2 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191142"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191432"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "2 * x + 3 * y <= 15",
+      "3 * x - 2 * y <= 9",
+      "x >= 2",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 3 * x + 4 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191134"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191433"
+  },
+  "credits_used": 6,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Variables": [
+      "x",
+      "y"
+    ],
+    "Constraints": [
+      "x + y <= 6",
+      "x - 2 * y <= 1",
+      "x >= 1",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 4 * x + 3 * y"
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191105"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191434"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 15,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 8,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 20,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 4,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 10,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 15,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 4,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 3
+      }
+    ],
+    "Supplies": [
+      20,
+      0,
+      0,
+      -5,
+      -15
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191157"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191435"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 8,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 5,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 12,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 4
+      }
+    ],
+    "Supplies": [
+      15,
+      0,
+      0,
+      -3,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191436"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 12,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 8,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 6,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 1
+      }
+    ],
+    "Supplies": [
+      18,
+      0,
+      0,
+      -6,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191437"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 8,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 12,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 6,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 8,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 4
+      }
+    ],
+    "Supplies": [
+      15,
+      0,
+      0,
+      -4,
+      -14
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319111f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191438"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 15,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 8,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 20,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 4,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 10,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 15,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 4,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 3
+      }
+    ],
+    "Supplies": [
+      20,
+      0,
+      0,
+      -5,
+      -15
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113a"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191439"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 18,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 12,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 8,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 6,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 1
+      }
+    ],
+    "Supplies": [
+      18,
+      0,
+      0,
+      -6,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191117"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143a"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 20,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 10,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 6,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 10,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 8,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 12,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 6
+      }
+    ],
+    "Supplies": [
+      20,
+      0,
+      0,
+      -5,
+      -15
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319110d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143b"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 12,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 5,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 8,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 4
+      }
+    ],
+    "Supplies": [
+      18,
+      0,
+      0,
+      -6,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191111"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143c"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 8,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 5,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 12,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 1
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 4
+      }
+    ],
+    "Supplies": [
+      15,
+      0,
+      0,
+      -3,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191113"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143d"
+  },
+  "credits_used": 7,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "Arcs": [
+      {
+        "start_node": 0,
+        "end_node": 1,
+        "capacity": 12,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 0,
+        "end_node": 2,
+        "capacity": 10,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 1,
+        "end_node": 2,
+        "capacity": 15,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 1,
+        "end_node": 3,
+        "capacity": 8,
+        "unit_cost": 5
+      },
+      {
+        "start_node": 1,
+        "end_node": 4,
+        "capacity": 6,
+        "unit_cost": 4
+      },
+      {
+        "start_node": 2,
+        "end_node": 3,
+        "capacity": 7,
+        "unit_cost": 3
+      },
+      {
+        "start_node": 2,
+        "end_node": 4,
+        "capacity": 18,
+        "unit_cost": 2
+      },
+      {
+        "start_node": 3,
+        "end_node": 4,
+        "capacity": 20,
+        "unit_cost": 6
+      },
+      {
+        "start_node": 4,
+        "end_node": 2,
+        "capacity": 5,
+        "unit_cost": 1
+      }
+    ],
+    "Supplies": [
+      18,
+      0,
+      0,
+      -6,
+      -12
+    ]
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319114b"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143e"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "board_size": 8
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113c"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f28319143f"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "board_size": 10
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191101"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191440"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "board_size": 12
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191119"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191441"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "board_size": 8
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191115"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191442"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "board_size": 10
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113e"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191443"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "board_size": 12
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191116"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191444"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "board_size": 8
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113d"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191445"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 2,
+  "problem_desc": {
+    "board_size": 10
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319111f"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191446"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 0,
+  "problem_desc": {
+    "board_size": 12
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f283191149"
+  }
+},
+{
+  "_id": {
+    "$oid": "66799a2ada3f76f283191447"
+  },
+  "credits_used": 8,
+  "problem_timestamp": {
+    "$date": "2024-06-24T12:00:00.000Z"
+  },
+  "problem_state": 1,
+  "problem_desc": {
+    "board_size": 8
+  },
+  "user_id": {
+    "$oid": "66797085da3f76f28319113a"
+  }
+}]

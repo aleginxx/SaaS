@@ -1,0 +1,11 @@
+{
+    "Variables": ["x", "y"],
+    "Constraints": [
+      "2 * x + 3 * y <= 15",
+      "3 * x - 2 * y <= 9",
+      "x >= 2",
+      "y >= 1"
+    ],
+    "Objective": "Maximize 3 * x + 4 * y"
+  }
+  

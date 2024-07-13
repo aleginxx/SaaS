@@ -1,0 +1,16 @@
+{
+    "name": "tool-service",
+    "version": "1.0.0",
+    "description": "Tool microservice for solveMyProblem application",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "kafkajs": "^1.15.0",
+        "mongoose": "^5.12.3"
+    }
+}

@@ -1,0 +1,106 @@
+# version: '3.8'
+
+services:
+  # frontend-service:
+  #   build:
+  #     context: .
+  #   ports:
+  #     - "3000:3000"  # Map container's port 3000 to host's port 3000
+  #   depends_on:
+  #     - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=admin  # Specify the authentication database
+      - MONGO_SUPERUSER_USER=superuser  # Superuser username
+      - MONGO_SUPERUSER_PASSWORD=superuser_password  # Superuser password
+    volumes:
+      - mongo-data:/data/db
+
+  tools-service:
+    build:
+      context: ./microservices/tools-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/toolsDB
+    ports:
+      - "3002:3002"
+
+  credit-card-service:
+    build:
+      context: ./microservices/credit-card-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/creditcardDB
+    ports:
+      - "3001:3001"
+    depends_on:
+      - tools-service
+    volumes:
+      - ./microservices:/usr/src/app/microservices
+
+  transactions-service:
+    build:
+      context: ./microservices/transactions-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/transactionsDB
+    ports:
+      - "3004:3004"
+    depends_on:
+      - tools-service
+
+  user-service:
+    build:
+      context: ./microservices/user-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/userDB
+    ports:
+      - "3006:3000"
+    depends_on:
+      - tools-service
+    volumes:
+      - ./microservices:/usr/src/app/microservices
+
+  problem-service:
+    build:
+      context: ./microservices/problem-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/problemDB
+    ports:
+      - "3003:3003"
+    depends_on:
+      - user-service
+    volumes:
+      - ./microservices:/usr/src/app/microservices
+
+  solutions-service:
+    build:
+      context: ./microservices/solutions-service
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/solutionsDB
+    ports:
+      - "3005:3005"
+    depends_on:
+      - problem-service
+    volumes:
+      - ./microservices:/usr/src/app/microservices
+
+  frontend-service:
+    build:
+      context: ./front-end
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end:/usr/src/app/
+    depends_on:
+      - user-service
+
+networks:
+  saas-network:
+    external: true
+
+volumes:
+  mongo-data:
+    driver: local

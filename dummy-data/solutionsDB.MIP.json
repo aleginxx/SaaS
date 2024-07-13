@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "6686e38e3e5e901d6c621727"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191420"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 2\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 23.0\r\nx = 3.0\r\ny = 2.0\r\n\r\nAdvanced usage:\r\nProblem solved in 141 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 1 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:01:50.884Z"
+  },
+  "time_elapsed": 352,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3953e5e901d6c621729"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191421"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 3\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 15.000000000000002\r\nx = 5.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 51 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 1 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:01:57.738Z"
+  },
+  "time_elapsed": 183,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e39b3e5e901d6c62172b"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191422"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 3.0\r\nx = 1.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 9 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:03.571Z"
+  },
+  "time_elapsed": 137,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3a23e5e901d6c62172d"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191423"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 5\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 18.0\r\nx = 6.0\r\ny = 0.0\r\n\r\nAdvanced usage:\r\nProblem solved in 10 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 1 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:10.727Z"
+  },
+  "time_elapsed": 131,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3a93e5e901d6c62172f"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191424"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 4.0\r\nx = 1.0\r\ny = 2.0\r\n\r\nAdvanced usage:\r\nProblem solved in 7 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:17.279Z"
+  },
+  "time_elapsed": 126,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3b13e5e901d6c621731"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191425"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 22.0\r\nx = 4.0\r\ny = 2.0\r\n\r\nAdvanced usage:\r\nProblem solved in 7 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:25.312Z"
+  },
+  "time_elapsed": 139,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3b83e5e901d6c621733"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191426"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 10.0\r\nx = 2.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 10 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:32.309Z"
+  },
+  "time_elapsed": 141,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3c03e5e901d6c621735"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191427"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 14.0\r\nx = 1.0\r\ny = 4.0\r\n\r\nAdvanced usage:\r\nProblem solved in 11 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 1 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:40.499Z"
+  },
+  "time_elapsed": 135,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3c73e5e901d6c621737"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191428"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 3.0\r\nx = 1.0\r\ny = 1.0\r\n\r\nAdvanced usage:\r\nProblem solved in 8 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:47.997Z"
+  },
+  "time_elapsed": 119,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686e3ce3e5e901d6c621739"
+  },
+  "problem_id": {
+    "$oid": "66799a2ada3f76f283191429"
+  },
+  "solution_desc": "Number of variables = 2\r\nNumber of constraints = 4\r\nSolving with SCIP 9.0.0 [LP solver: Glop 9.10]\r\nSolution:\r\nObjective value = 11.0\r\nx = 2.0\r\ny = 3.0\r\n\r\nAdvanced usage:\r\nProblem solved in 11 milliseconds\r\nProblem solved in 0 iterations\r\nProblem solved in 0 branch-and-bound nodes",
+  "solution_timestamp": {
+    "$date": "2024-07-04T18:02:54.844Z"
+  },
+  "time_elapsed": 128,
+  "__v": 0
+}]

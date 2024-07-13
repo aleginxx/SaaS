@@ -1,0 +1,258 @@
+[{
+    "_id": {
+      "$oid": "66799a2ada3f76f283191420"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "x + 7 * y <= 17.5",
+        "x <= 3.5"
+      ],
+      "Objective": "Maximize x + 10 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191132"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191421"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "x + 8 * y <= 20",
+        "2 * x + 5 * y <= 15",
+        "x >= 1.5"
+      ],
+      "Objective": "Maximize 2 * x + 5 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319114e"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191422"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "2 * x + 3 * y <= 12",
+        "x + y <= 5",
+        "x >= 1",
+        "y >= 0.5"
+      ],
+      "Objective": "Minimize x + 2 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191103"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191423"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "3 * x + 4 * y <= 18",
+        "x + 2 * y <= 8",
+        "2 * x + y >= 5",
+        "x >= 2",
+        "y <= 3"
+      ],
+      "Objective": "Maximize 3 * x + 2 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191124"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191424"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "x + 2 * y <= 10",
+        "2 * x - y <= 8",
+        "x >= 1",
+        "y >= 2"
+      ],
+      "Objective": "Minimize 2 * x + y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f2831910fb"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191425"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "x + y <= 6",
+        "x - 2 * y <= 1",
+        "x >= 1",
+        "y >= 1"
+      ],
+      "Objective": "Maximize 4 * x + 3 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191426"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "2 * x + 3 * y <= 15",
+        "3 * x - 2 * y <= 9",
+        "x >= 2",
+        "y >= 1"
+      ],
+      "Objective": "Minimize 3 * x + 4 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f2831910fc"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191427"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "3 * x + 2 * y <= 12",
+        "x + y <= 5",
+        "x >= 1",
+        "y >= 1"
+      ],
+      "Objective": "Maximize 2 * x + 3 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319111c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191428"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "x + y <= 8",
+        "x - y <= 2",
+        "x >= 1",
+        "y >= 1"
+      ],
+      "Objective": "Minimize x + 2 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319114e"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191429"
+    },
+    "credits_used": 5,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Variables": [
+        "x",
+        "y"
+      ],
+      "Constraints": [
+        "2 * x + y <= 10",
+        "x + 2 * y <= 8",
+        "x >= 1.5",
+        "y >= 1"
+      ],
+      "Objective": "Maximize x + 3 * y"
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191152"
+    }
+  }]

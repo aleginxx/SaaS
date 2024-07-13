@@ -1,0 +1,65 @@
+{
+    "Arcs": [
+        {
+            "start_node": 0,
+            "end_node": 1,
+            "capacity": 15,
+            "unit_cost": 4
+        },
+        {
+            "start_node": 0,
+            "end_node": 2,
+            "capacity": 8,
+            "unit_cost": 4
+        },
+        {
+            "start_node": 1,
+            "end_node": 2,
+            "capacity": 20,
+            "unit_cost": 2
+        },
+        {
+            "start_node": 1,
+            "end_node": 3,
+            "capacity": 4,
+            "unit_cost": 2
+        },
+        {
+            "start_node": 1,
+            "end_node": 4,
+            "capacity": 10,
+            "unit_cost": 6
+        },
+        {
+            "start_node": 2,
+            "end_node": 3,
+            "capacity": 15,
+            "unit_cost": 1
+        },
+        {
+            "start_node": 2,
+            "end_node": 4,
+            "capacity": 4,
+            "unit_cost": 3
+        },
+        {
+            "start_node": 3,
+            "end_node": 4,
+            "capacity": 20,
+            "unit_cost": 2
+        },
+        {
+            "start_node": 4,
+            "end_node": 2,
+            "capacity": 5,
+            "unit_cost": 3
+        }
+    ],
+    "Supplies": [
+    20,
+    0,
+    0,
+    -5,
+    -15
+    ]
+}

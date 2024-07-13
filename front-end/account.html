@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveMyProblem - SaaS for Complex Computational Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to SolveMyProblem!</h1>
+        <p>Your one-stop solution for complex computational tasks.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li id="funds" style="display: none;"><a href="funds.html">Buy Tokens</a></li>
+            <li id="solve" style="display: none;"><a href="solve.html">Solve a Problem</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="register"><a href="register.html">Register</a></li>
+            <li id="account" style="display: none;"><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="accountInfo">
+        <h2>Account Info</h2>
+        <b>
+            <p id="username">Username:</p>
+            <p id="email">Email:</p>
+            <p id="firstName">First name:</p>
+            <p id="lastName">Last name:</p>
+            <p id="balance">Balance:</p>
+            <p id="credits">Credits:</p>
+        </b>
+        <button><a href="logout.html" style="text-decoration:none;color: white;">Logout</a></button>
+        <h3>Active Credit cards:</h3>
+        <div id="creditCards"></div>
+        <h3>
+            <button><a href="activity.html" style="text-decoration:none;color: white;">Transaction History</a></button>
+        </h3>
+    </section>
+
+    <section id="addCreditCard">
+        <form id="addCreditCardForm">
+            <h2>Add Credit Card</h2>
+            <input type="text" id="cc-holder-name" name="cc_holder_name" placeholder="Cardholder's name" required>
+            <input type="text" id="cc-number" name="cc_number" placeholder="Card Number" required>
+            <input type="text" id="cc-exp-date" name="cc_exp_date" placeholder="MM/YY" required>
+            <input type="text" id="cc-cvv" name="cc_cvv" placeholder="CVV" required>
+
+            <button type="submit">Add Credit Card</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 SolveMyProblem, Inc.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.5.23/jsrsasign-all-min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const token = Cookies.get('token');
+            if (!token) {
+                alert('User not authenticated.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            const decodedToken = KJUR.jws.JWS.parse(token);
+            const userId = decodedToken.payloadObj.userId;
+
+            fetch(`http://localhost:3000/solveMyProblem/users/${userId}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch user data with status: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(user => {
+                    document.getElementById('username').textContent = "Username: " + user.username;
+                    document.getElementById('email').textContent = "Email: " + user.email;
+                    document.getElementById('firstName').textContent = "First name: " + user.first_name;
+                    document.getElementById('lastName').textContent = "Last name: " + user.last_name;
+                    document.getElementById('balance').textContent = "Balance: $" + user.balance.toFixed(2);
+                    document.getElementById('credits').textContent = "Credits: " + user.credits;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error loading user information. Please check console for details.');
+                });
+
+            /*fetch(`http://localhost:3000/solveMyProblem/users/${userId}/getUserCreditCards`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch user credit cards with status: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(creditCards => {
+                    const creditCardsContainer = document.getElementById('creditCards');
+                    if (creditCards.length > 0) {
+                        creditCards.forEach(cc => {
+                            const cardInfo = document.createElement('p');
+                            cardInfo.textContent = `**** **** **** ${cc.cc_number.slice(-4)}`;
+                            creditCardsContainer.appendChild(cardInfo);
+                        });
+                    } else {
+                        const noCardsInfo = document.createElement('p');
+                        noCardsInfo.textContent = "No credit cards available";
+                        creditCardsContainer.appendChild(noCardsInfo);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error loading user credit card information. Please check console for details.');
+                });
+                */
+
+            document.getElementById('addCreditCardForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const cc_holder_name = document.getElementById('cc-holder-name').value;
+                const cc_number = document.getElementById('cc-number').value;
+                const cc_exp_date = document.getElementById('cc-exp-date').value; // Corrected ID
+                const cc_cvv = document.getElementById('cc-cvv').value; // Corrected ID
+
+                const [month, year] = cc_exp_date.split('/');
+                const formatted_cc_exp_date = `${year}-${month}-01`;
+
+                fetch(`http://localhost:3000/solveMyProblem/users/${userId}/addCreditCard`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        cc_holder_name: cc_holder_name,
+                        cc_number: cc_number,
+                        cc_cvv: cc_cvv,
+                        cc_exp_date: formatted_cc_exp_date
+                    })
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to add credit card with status: ' + response.status);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        console.log('Success:', data);
+                        window.location.href = 'account.html'; // Redirect after success
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error adding credit card. Please check console for details.');
+                    });
+            });
+        });
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

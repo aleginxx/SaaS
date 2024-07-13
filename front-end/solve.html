@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveMyProblem - SaaS for Complex Computational Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to SolveMyProblem!</h1>
+        <p>Your one-stop solution for complex computational tasks.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li id="funds" style="display: none;"><a href="funds.html">Buy Tokens</a></li>
+            <li id="solve" style="display: none;"><a href="solve.html">Solve a Problem</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="register"><a href="register.html">Register</a></li>
+            <li id="account" style="display: none;"><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="chooseOrTool">
+        <h2>Select OR-Tool Manually</h2>
+        <form id="or-tool-form" method="POST" enctype="multipart/form-data">
+            <b><label for="or-tool-manual">Choose OR-Tool:</label></b>
+            <select id="or-tool-manual" name="or_tool" required>
+                <option value="">Choose an OR-Tool</option>
+                <option value="Employee Scheduling">Employee Scheduling</option>
+                <option value="Vehicle Routing Problem">Vehicle Routing Problem</option>
+                <option value="The Knapsack Problem">The Knapsack Problem</option>
+                <option value="Linear Sum Assignment Solver">Linear Sum Assignment Solver</option>
+                <option value="Solving a MIP Problem">Solving a MIP Problem</option>
+                <option value="Solving an LP Problem">Solving an LP Problem</option>
+                <option value="Minimum Cost Flows">Minimum Cost Flows</option>
+                <option value="The N-queens Problem">The N-queens Problem</option>
+            </select>
+
+            <div id="parameters-list"></div>
+
+            <button type="submit">Submit Problem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 SolveMyProblem, Inc.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.1.0/jsrsasign-all-min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function updateTotal() {
+            var tokenAmount = document.getElementById('token-amount').value;
+            var totalCost = tokenAmount * 0.1; // 0.1 euros per token
+            document.getElementById('total-cost').textContent = totalCost.toFixed(2);
+        }
+
+        function showParameters() {
+            var parameters = {
+                "Employee Scheduling": {
+                    parameters: ["Number of employees", "Shift constraints"],
+                    explanation: "Organizations whose employees work multiple shifts need to schedule sufficient workers for each daily shift. Typically the schedules will have constraints such as 'no employee should work two shifts in a row'. Finding a schedule that satisfies all constraints can be computationally difficult.",
+                    example: "Ensure no employee works two shifts in a row and all shifts are covered.",
+                    jsonFile: "employee_scheduling.json"
+                },
+                "Vehicle Routing Problem": {
+                    parameters: ["Number of vehicles", "Depot Index", "Maxmium Distance Matrix"],
+                    explanation: "In the Vehicle Routing Problem (VRP) the goal is to find optimal routes for multiple vehicles visiting a set of locations.",
+                    requirements: "You should provide the Number of Vehicles, the Location (Longitude and Latitude), the Depot Index and the Maxmium Distance Matrix.",
+                    example: "For Number of vehicles = 2, Depot Index = 0, Maxmium Distance Matrix = 10000 and the attached Location JSON file, the output is: \n Route for vehicle 0: \n  0 ->  1 -> 0 \n Distance of the route: 9622m \n Route for vehicle 1: \n  0 ->  2 -> 0 \n Distance of the route: 5274m \n Maximum of the route distances: 9622m",
+                    fileUpload: true, // This flag indicates that file upload is required for this tool
+                    jsonFile: "locations.json"
+                },
+                "The Knapsack Problem": {
+                    explanation: "In the knapsack problem you need to pack a set of items with given values and sizes (such as weights or volumes) into a container with a maximum capacity. This problem models decision-making processes like resource allocation where there are constraints.",
+                    requirements: "You should provide the Weights, Values and Capacities of the conatiner.",
+                    example: "Choose a subset of items of maximum total value that will fit in the container described in the following JSON file. \n Total value = 7534 \n Total weight: 850 \n Packed items: [0, 1, 3, 4, 6, 10, 11, 12, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 28, 29, 30, 31, 32, 34, 38, 39, 41, 42, 44, 47, 48, 49] \n Packed weights: [7, 0, 22, 80, 11, 59, 18, 0, 3, 8, 15, 42, 9, 0, 47, 52, 26, 6, 29, 84, 2, 4, 18, 7, 71, 3, 66, 31, 0, 65, 52, 13]",
+                    fileUpload: true,
+                    jsonFile: "knapsack.json"
+                },
+                "Linear Sum Assignment Solver": {
+                    explanation: "Linear Sum Assignment Solver is a specialized solver for the simple assignment problem which can be faster than either the MIP or CP-SAT solver. It is often used in operations research for resource assignment problems.",
+                    requirements: "You should provide the Cost Matrix.",
+                    example: "Find the optimal assignment of tasks to resources minimizing total cost of the provided Cost Matrix. \n Total cost = 265 \n Worker 0 assigned to task 3. Cost = 70 \n Worker 1 assigned to task 2. Cost = 55 \n Worker 2 assigned to task 1. Cost = 95 \n Worker 3 assigned to task 0. Cost = 45",
+                    fileUpload: true,
+                    jsonFile: "linear_solver.json"
+                },
+                "Solving a MIP Problem": {
+                    explanation: "To solve a MIP problem your program should include steps like declaring the MIP solver, defining the variables, constraints, and objective, calling the MIP solver, and displaying the solution. MIP problems combine linear programming with integer constraints, making them suitable for various discrete optimization tasks.",
+                    requirements: "You should provide the Variables, Constants and Objectives for the Linear Problem.",
+                    example: "Find the best integer solution to a linear problem under constraints given in the JSON file. \n Number of variables = 2 \n Number of constraints = 2 \n Solving with SCIP 9.0.0 [LP solver: Glop 9.10] \n Solution: \n Objective value = 23.0 \n x = 3.0 \n y = 2.0 \n Advanced usage: \n Problem solved in 72 milliseconds \n Problem solved in 0 iterations \n Problem solved in 1 branch-and-bound nodes",
+                    fileUpload: true,
+                    jsonFile: "mip.json"
+                },
+                "Solving an LP Problem": {
+                    explanation: "To solve a LP problem your program should include steps like declaring the LP solver, defining the variables, constraints, and objective, calling the LP solver, and displaying the solution. LP problems deal with continuous variables and are widely used in optimization.",
+                    requirements: "You should provide the Variables, Constants and Objectives for the Linear Problem.",
+                    example: "Find the optimal continuous solution to a linear problem under constraints given in the JSON file. \n Number of variables = 2 \n Number of constraints = 4 \n Solving with Glop solver v9.10.4067 \n Solution: \n Objective value = 21.5 \n x = 4.4 \n y = 2.1 \n Advanced usage: \n Problem solved in 15 milliseconds \n Problem solved in 2 iterations",
+                    fileUpload: true,
+                    jsonFile: "lp.json"
+                },
+                "Minimum Cost Flows": {
+                    explanation: "In the Minimum Cost Flows problem each arc in the graph has a unit cost for transporting material across it. The problem is to find a flow with the least total cost. It is applicable in scenarios like network routing and supply chain optimization.",
+                    requirements: "You should provide the Arc (start_node, end_node, capacity, unit_cost) and Supply variables.",
+                    example: "Find the least-cost way to send goods from suppliers to consumers. \n Minimum cost: 150 \n  Arc    Flow / Capacity Cost \n 0 -> 1   12  /  15       48  \n 0 -> 2    8  /   8       32 \n 1 -> 2    8  /  20       16 \n 1 -> 3    4  /   4       8 \n 1 -> 4    0  /  10       0 \n 2 -> 3   12  /  15       12 \n 2 -> 4    4  /   4       12 \n 3 -> 4   11  /  20       22 \n 4 -> 2    0  /   5       0",
+                    fileUpload: true,
+                    jsonFile: "mincost.json"
+                },
+                "The N-queens Problem": {
+                    parameters: ["Board size (N)"],
+                    explanation: "How can N queens be placed on an NxN chessboard so that no two of them attack each other? This classic problem is often used to teach backtracking algorithms in computer science.",
+                    example: "Place 4 queens on an 4x4 chessboard without any attacking each other.\n _ _ Q _ \n Q _ _ _ \n _ _ _ Q \n _ Q _ _ \n  \n _ Q _ _ \n _ _ _ Q \n Q _ _ _ \n _ _ Q _ \n  \n Statistics \n   failures: 4 \n   branches: 10 \n   wall time: 2 ms \n   Solutions found: 2",
+                }
+            };
+
+            var selectedTool = document.getElementById('or-tool-manual').value;
+            var selectedParameters = parameters[selectedTool];
+
+            var parametersList = document.getElementById('parameters-list');
+            parametersList.innerHTML = "";
+
+            if (selectedParameters) {
+                var parametersHTML = "";
+
+                if (selectedParameters.fileUpload) {
+                    parametersHTML += `
+                        <br><b>Upload JSON File:</b><br>
+                        <input type="file" name="vrp_json" accept=".json" required>
+                        <br>
+                    `;
+                }
+
+                if (selectedParameters.parameters) {
+                    parametersHTML += "<br><b>Parameters:</b><ul><br>";
+                    selectedParameters.parameters.forEach(function (param) {
+                        parametersHTML += "<li style='list-style-type:none;'>" + param + ": <br><input type='text' name='" + param.replace(/\s+/g, '-') + "-question' placeholder='Enter " + param + "'></li>";
+                        // var paramNameForInput = param.replace(/\s+/g, '-') + "-question";
+                        // console.log("Input field name attribute:", paramNameForInput);
+                    });
+                    parametersHTML += "</ul>";
+                }
+
+                parametersHTML += "<b>Explanation:</b><p>" + selectedParameters.explanation.replace(/\n/g, '<br>') + "</p>";
+                
+                if (selectedParameters.requirements) {
+                    parametersHTML += "<br><b>Requirements:</b><p>" + (selectedParameters.requirements ? selectedParameters.requirements.replace(/\n/g, '<br>') : 'N/A') + "</p>";
+                }
+                
+                parametersHTML += "<br><b>Example:</b><p>" + selectedParameters.example.replace(/\n/g, '<br>') + "</p><br>";
+                
+                if (selectedParameters.jsonFile) {
+                    parametersHTML += `<a href="${selectedParameters.jsonFile}" download>Download Sample JSON File</a>`;
+                }
+
+                parametersList.innerHTML = parametersHTML;
+            }
+        }
+
+        document.getElementById('or-tool-manual').addEventListener('change', showParameters);
+
+        document.getElementById('or-tool-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const token = Cookies.get('token');
+            const decodedToken = KJUR.jws.JWS.parse(token);
+            const userId = decodedToken.payloadObj.userId;
+
+            
+            const selectedTool = document.getElementById('or-tool-manual').value;
+            const formData = new FormData(event.target);
+
+            // Create a problem description based on the selected tool and form data
+            let problemDesc = {
+                problem_desc: {}
+            };
+
+            if (selectedTool === "Vehicle Routing Problem" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    const json = JSON.parse(event.target.result); // Parse JSON content
+                    problemDesc.problem_desc['Locations'] = json.Locations; // Assign locations to problem description
+                    problemDesc.problem_desc['NumVehicles'] = formData.get('Number-of-vehicles-question');
+                    problemDesc.problem_desc['DepotIndex'] = formData.get('Depot-Index-question');
+                    problemDesc.problem_desc['MaxDistance'] = formData.get('Maxmium-Distance-Matrix-question');
+                    // console.log("Problem Description : ", problemDesc);
+                    // console.log("User id : ", userId);
+                    submitProblem(selectedTool, userId, selectedTool, problemDesc); // Submit problem after JSON file is read
+                };
+                reader.readAsText(file); // Read uploaded file as text
+            } else if (selectedTool === "The Knapsack Problem" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // console.log("Got file", file);
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                // console.log("New reader");
+
+                reader.onload = function (event) {
+                    // console.log("Got in"); // Check if onload event triggers
+                    try {
+                        const json = JSON.parse(event.target.result); // Attempt to parse JSON content
+                        // console.log("Parsed JSON:", json); // Log parsed JSON object to check content
+
+                        // Update problem description
+                        problemDesc.problem_desc['Values'] = json.Values;
+                        problemDesc.problem_desc['Weights'] = json.Weights;
+                        problemDesc.problem_desc['Capacities'] = json.Capacities;
+
+                        // console.log("Problem Description:", problemDesc);
+                        // console.log("User id:", userId);
+
+                        // Submit problem after JSON file is read
+                        submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
+                };
+
+                // Read file as text
+                reader.readAsText(file);
+            } else if (selectedTool === "Linear Sum Assignment Solver" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // console.log("Got file", file);
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                // console.log("New reader");
+
+                reader.onload = function (event) {
+                    // console.log("Got in"); // Check if onload event triggers
+                    try {
+                        const json = JSON.parse(event.target.result); // Attempt to parse JSON content
+                        // console.log("Parsed JSON:", json); // Log parsed JSON object to check content
+
+                        // Update problem description
+                        problemDesc.problem_desc['Costs'] = json.Costs;
+
+                        // console.log("Problem Description:", problemDesc);
+                        // console.log("User id:", userId);
+
+                        // Submit problem after JSON file is read
+                        submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
+                };
+
+                // Read file as text
+                reader.readAsText(file);
+            } else if (selectedTool === "Solving a MIP Problem" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // console.log("Got file", file);
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                // console.log("New reader");
+
+                reader.onload = function (event) {
+                    // console.log("Got in"); // Check if onload event triggers
+                    try {
+                        const json = JSON.parse(event.target.result); // Attempt to parse JSON content
+                        // console.log("Parsed JSON:", json); // Log parsed JSON object to check content
+
+                        // Update problem description
+                        problemDesc.problem_desc['Variables'] = json.Variables;
+                        problemDesc.problem_desc['Constraints'] = json.Constraints;
+                        problemDesc.problem_desc['Objective'] = json.Objective;
+
+                        // console.log("Problem Description:", problemDesc);
+                        // console.log("User id:", userId);
+
+                        // Submit problem after JSON file is read
+                        submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
+                };
+
+                // Read file as text
+                reader.readAsText(file);
+            } else if (selectedTool === "Solving an LP Problem" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // console.log("Got file", file);
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                // console.log("New reader");
+
+                reader.onload = function (event) {
+                    // console.log("Got in"); // Check if onload event triggers
+                    try {
+                        const json = JSON.parse(event.target.result); // Attempt to parse JSON content
+                        // console.log("Parsed JSON:", json); // Log parsed JSON object to check content
+
+                        // Update problem description
+                        problemDesc.problem_desc['Variables'] = json.Variables;
+                        problemDesc.problem_desc['Constraints'] = json.Constraints;
+                        problemDesc.problem_desc['Objective'] = json.Objective;
+
+                        // console.log("Problem Description:", problemDesc);
+                        // console.log("User id:", userId);
+
+                        // Submit problem after JSON file is read
+                        submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
+                };
+
+                // Read file as text
+                reader.readAsText(file);
+            } else if (selectedTool === "Minimum Cost Flows" && formData.has('vrp_json')) {
+                const file = formData.get('vrp_json');
+                // console.log("Got file", file);
+                // FileReader to read JSON file content
+                const reader = new FileReader();
+                // console.log("New reader");
+
+                reader.onload = function (event) {
+                    // console.log("Got in"); // Check if onload event triggers
+                    try {
+                        const json = JSON.parse(event.target.result); // Attempt to parse JSON content
+                        // console.log("Parsed JSON:", json); // Log parsed JSON object to check content
+
+                        // Update problem description
+                        problemDesc.problem_desc['Arcs'] = json.Arcs;
+                        problemDesc.problem_desc['Supplies'] = json.Supplies;
+
+                        // console.log("Problem Description:", problemDesc);
+                        // console.log("User id:", userId);
+
+                        // Submit problem after JSON file is read
+                        submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                    }
+                };
+
+                // Read file as text
+                reader.readAsText(file);
+            } else if (selectedTool === "The N-queens Problem") {
+                problemDesc.problem_desc['board_size'] = formData.get('Board-size-(N)-question');
+
+                console.log("Problem Description:", problemDesc);
+                console.log("User id:", userId);
+
+                submitProblem(selectedTool, userId, selectedTool, problemDesc);
+                }
+        });
+
+        // Function to get credits used based on selected tool
+        function getCreditsUsed(tool) {
+            const creditsMapping = {
+                "Employee Scheduling": 1,
+                "Vehicle Routing Problem": 2,
+                "The Knapsack Problem": 3,
+                "Linear Sum Assignment Solver": 4,
+                "Solving a MIP Problem": 5,
+                "Solving an LP Problem": 6,
+                "Minimum Cost Flows": 7,
+                "The N-queens Problem": 8
+            };
+            return creditsMapping[tool] || 0; // Default to 0 credit if tool not found (fallback)
+        }
+
+        // Function to submit problem to backend API
+        function submitProblem(tool_name, userId, selectedTool, problemDesc) {
+            let requestBody; 
+
+            if (tool_name === "Vehicle Routing Problem") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        DepotIndex: parseInt(problemDesc.problem_desc['DepotIndex']),
+                        Locations: problemDesc.problem_desc['Locations'],
+                        MaxDistance: parseInt(problemDesc.problem_desc['MaxDistance']),
+                        NumVehicles: parseInt(problemDesc.problem_desc['NumVehicles'])
+                    }
+                }
+            } else if (tool_name === "The Knapsack Problem") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        Values: problemDesc.problem_desc['Values'],
+                        Weights: problemDesc.problem_desc['Weights'],
+                        Capacities: problemDesc.problem_desc['Capacities']
+                    }
+                } 
+            } else if (tool_name === "Linear Sum Assignment Solver") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        Costs: problemDesc.problem_desc['Costs']
+                    }
+                } 
+            } else if (tool_name === "Solving a MIP Problem") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        Variables: problemDesc.problem_desc['Variables'],
+                        Constraints: problemDesc.problem_desc['Constraints'],
+                        Objective: problemDesc.problem_desc['Objective']
+                    }
+                } 
+            } else if (tool_name === "Solving an LP Problem") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        Variables: problemDesc.problem_desc['Variables'],
+                        Constraints: problemDesc.problem_desc['Constraints'],
+                        Objective: problemDesc.problem_desc['Objective']
+                    }
+                } 
+            } else if (tool_name === "Minimum Cost Flows") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        Arcs: problemDesc.problem_desc['Arcs'],
+                        Supplies: problemDesc.problem_desc['Supplies'],
+                    }
+                } 
+            } else if (tool_name === "The N-queens Problem") {
+                requestBody = {
+                    user_id: userId,
+                    credits_used: getCreditsUsed(selectedTool),
+                    problem_desc: {
+                        board_size: problemDesc.problem_desc['board_size'],
+                    }
+                } 
+            };
+
+            // console.log("Request Body : ", JSON.stringify(requestBody));
+
+            fetch('http://localhost:3003/solveMyProblem/problems/', {
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + token, // Use the global token
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                body: JSON.stringify(requestBody), // Use FormData to send both JSON and other form fields
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to submit problem with status: ' + response.status);
+                    }
+                    return response.json(); // Parse response JSON
+                })
+                .then(data => {
+                    console.log('Problem submitted successfully:', data);
+                    alert('Problem submitted successfully!');
+                    window.location.href = 'index.html'; // Redirect to index.html after successful submission
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error submitting problem. Please check console for details.');
+                });
+        }
+
+        // Initial update on window load
+        window.onload = function () {
+            updateTotal(); // Update total cost calculation on window load
+            showParameters(); // Show parameters based on initial OR-Tool selection
+        };
+    </script>
+</body>
+
+</html>

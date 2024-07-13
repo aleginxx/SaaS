@@ -1,0 +1,180 @@
+[{
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913f8"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 4,
+      "NumShifts": 3,
+      "NumDays": 3
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 1,
+    "user_id": {
+      "$oid": "66797085da3f76f283191156"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913f9"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 5,
+      "NumShifts": 2,
+      "NumDays": 4
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 0,
+    "user_id": {
+      "$oid": "66797085da3f76f28319111f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913fa"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 3,
+      "NumShifts": 3,
+      "NumDays": 3
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 2,
+    "user_id": {
+      "$oid": "66797085da3f76f28319111f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913fb"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 4,
+      "NumShifts": 2,
+      "NumDays": 5
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 1,
+    "user_id": {
+      "$oid": "66797085da3f76f283191125"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913fc"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 6,
+      "NumShifts": 3,
+      "NumDays": 2
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 0,
+    "user_id": {
+      "$oid": "66797085da3f76f283191127"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913fd"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 3,
+      "NumShifts": 4,
+      "NumDays": 3
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 2,
+    "user_id": {
+      "$oid": "66797085da3f76f283191114"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913fe"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 5,
+      "NumShifts": 3,
+      "NumDays": 4
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 1,
+    "user_id": {
+      "$oid": "66797085da3f76f28319113f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f2831913ff"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 4,
+      "NumShifts": 3,
+      "NumDays": 3
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 0,
+    "user_id": {
+      "$oid": "66797085da3f76f283191115"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191400"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 6,
+      "NumShifts": 2,
+      "NumDays": 4
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 2,
+    "user_id": {
+      "$oid": "66797085da3f76f28319113e"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191401"
+    },
+    "credits_used": 1,
+    "problem_desc": {
+      "NumEmployees": 3,
+      "NumShifts": 3,
+      "NumDays": 5
+    },
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+    "": 1,
+    "user_id": {
+      "$oid": "66797085da3f76f283191119"
+    }
+}]

@@ -1,0 +1,780 @@
+[{
+    "_id": {
+      "$oid": "66799a2ada3f76f283191434"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 15,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 8,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 20,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 4,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 10,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 15,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 4,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 3
+        }
+      ],
+      "Supplies": [
+        20,
+        0,
+        0,
+        -5,
+        -15
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191157"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191435"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 8,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 5,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 12,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 4
+        }
+      ],
+      "Supplies": [
+        15,
+        0,
+        0,
+        -3,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319110e"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191436"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 12,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 8,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 6,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 1
+        }
+      ],
+      "Supplies": [
+        18,
+        0,
+        0,
+        -6,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319110c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191437"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 8,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 12,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 6,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 8,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 4
+        }
+      ],
+      "Supplies": [
+        15,
+        0,
+        0,
+        -4,
+        -14
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319111f"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191438"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 15,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 8,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 20,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 4,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 10,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 15,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 4,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 3
+        }
+      ],
+      "Supplies": [
+        20,
+        0,
+        0,
+        -5,
+        -15
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319113a"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f283191439"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 18,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 12,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 8,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 6,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 1
+        }
+      ],
+      "Supplies": [
+        18,
+        0,
+        0,
+        -6,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191117"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143a"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 20,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 10,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 6,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 10,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 8,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 12,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 6
+        }
+      ],
+      "Supplies": [
+        20,
+        0,
+        0,
+        -5,
+        -15
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319110d"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143b"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 12,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 5,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 8,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 4
+        }
+      ],
+      "Supplies": [
+        18,
+        0,
+        0,
+        -6,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191111"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143c"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 8,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 5,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 12,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 1
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 4
+        }
+      ],
+      "Supplies": [
+        15,
+        0,
+        0,
+        -3,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f283191113"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "66799a2ada3f76f28319143d"
+    },
+    "credits_used": 7,
+    "problem_timestamp": {
+      "$date": "2024-06-24T12:00:00.000Z"
+    },
+
+    "problem_desc": {
+      "Arcs": [
+        {
+          "start_node": 0,
+          "end_node": 1,
+          "capacity": 12,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 0,
+          "end_node": 2,
+          "capacity": 10,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 1,
+          "end_node": 2,
+          "capacity": 15,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 1,
+          "end_node": 3,
+          "capacity": 8,
+          "unit_cost": 5
+        },
+        {
+          "start_node": 1,
+          "end_node": 4,
+          "capacity": 6,
+          "unit_cost": 4
+        },
+        {
+          "start_node": 2,
+          "end_node": 3,
+          "capacity": 7,
+          "unit_cost": 3
+        },
+        {
+          "start_node": 2,
+          "end_node": 4,
+          "capacity": 18,
+          "unit_cost": 2
+        },
+        {
+          "start_node": 3,
+          "end_node": 4,
+          "capacity": 20,
+          "unit_cost": 6
+        },
+        {
+          "start_node": 4,
+          "end_node": 2,
+          "capacity": 5,
+          "unit_cost": 1
+        }
+      ],
+      "Supplies": [
+        18,
+        0,
+        0,
+        -6,
+        -12
+      ]
+    },
+    "user_id": {
+      "$oid": "66797085da3f76f28319114b"
+    }
+  }]

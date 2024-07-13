@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveMyProblem - SaaS for Complex Computational Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .scrollable {
+            max-height: 100px;
+            overflow-y: scroll;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .header-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header-images img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to SolveMyProblem!</h1>
+        <p>Your one-stop solution for complex computational tasks.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li id="funds" style="display: none;"><a href="funds.html">Buy Tokens</a></li>
+            <li id="solve" style="display: none;"><a href="solve.html">Solve a Problem</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="register"><a href="register.html">Register</a></li>
+            <li id="account" style="display: none;"><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div id="problems">
+            <h2>Problems by Credits Used</h2>
+
+            <div class="header-images">
+                <img src="hit-miss ratio.png" alt="Image 1" width="100" height="100">
+                <img src="time elapsed per problem.png" alt="Image 2" width="100" height="100">
+            </div>
+
+            <label for="problemType">Choose a Problem Type:</label>
+            <select id="problemType">
+                <option value="0">All Problems</option>
+                <option value="1">Employee Scheduling</option>
+                <option value="2">Vehicle Routing Problem</option>
+                <option value="3">The Knapsack Problem</option>
+                <option value="4">Linear Sum Assignment Solver</option>
+                <option value="5">Solving a MIP Problem</option>
+                <option value="6">Solving an LP Problem</option>
+                <option value="7">Minimum Cost Flows</option>
+                <option value="8">The N-queens Problem</option>
+            </select>
+
+            <table id="problemsTable">
+                <tr>
+                    <th>Problem Name</th>
+                    <th>Description</th>
+                    <th>Timestamp</th>
+                    <th>Solution</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script>
+        function getProblemName(creditsUsed) {
+            switch (creditsUsed) {
+                case 1:
+                    return 'Employee Scheduling';
+                case 2:
+                    return 'Vehicle Routing Problem';
+                case 3:
+                    return 'The Knapsack Problem';
+                case 4:
+                    return 'Linear Sum Assignment Solver';
+                case 5:
+                    return 'Solving a MIP Problem';
+                case 6:
+                    return 'Solving an LP Problem';
+                case 7:
+                    return 'Minimum Cost Flows';
+                case 8:
+                    return 'The N-queens Problem';
+                default:
+                    return 'Unknown Problem';
+            }
+        }
+
+        function displayProblems(problems, filter) {
+            const problemsTable = document.getElementById('problemsTable');
+            problemsTable.innerHTML = `
+                <tr>
+                    <th>Problem Name</th>
+                    <th>Description</th>
+                    <th>Timestamp</th>
+                    <th>Solution</th>
+                </tr>
+            `;
+
+            problems
+                .filter(problem => filter == 0 || problem.credits_used == filter)
+                .sort((a, b) => a.credits_used - b.credits_used)
+                .forEach(problem => {
+                    let row = problemsTable.insertRow();
+                    
+                    let problemName = getProblemName(problem.credits_used);
+                    row.insertCell(0).innerText = problemName;
+
+                    let descCell = row.insertCell(1);
+                    let descDiv = document.createElement('div');
+                    descDiv.className = 'scrollable';
+                    descDiv.innerText = JSON.stringify(problem.problem_desc, null, 2);
+                    descCell.appendChild(descDiv);
+
+                    row.insertCell(2).innerText = new Date(problem.problem_timestamp).toLocaleString();
+
+                    let solutionCell = row.insertCell(3);
+                    let solutionDiv = document.createElement('div');
+                    solutionDiv.className = 'scrollable';
+                    solutionDiv.innerText = 'Loading...';
+                    solutionCell.appendChild(solutionDiv);
+
+                    fetch(`http://localhost:3005/solveMyProblem/solve/problem/${problem._id}`)
+                        .then(response => response.json())
+                        .then(solution => {
+                            solutionDiv.innerText = solution ? solution.solution_desc : 'N/A';
+                        })
+                        .catch(err => {
+                            solutionDiv.innerText = 'N/A';
+                        });
+                });
+        }
+
+        document.getElementById('problemType').addEventListener('change', (event) => {
+            const filter = parseInt(event.target.value);
+            fetch('http://localhost:3003/solveMyProblem/problems/')
+                .then(response => response.json())
+                .then(problems => {
+                    displayProblems(problems, filter);
+                });
+        });
+
+        // Initial fetch and display
+        fetch('http://localhost:3003/solveMyProblem/problems/')
+            .then(response => response.json())
+            .then(problems => {
+                displayProblems(problems, 0); // Display all problems initially
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+    "Variables": [
+    "x",
+    "y"
+    ],
+    "Constraints": [
+    "x + 7 * y <= 17.5",
+    "x <= 3.5"
+    ],
+    "Objective": "Maximize x + 10 * y"
+}
